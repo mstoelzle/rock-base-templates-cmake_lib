@@ -69,8 +69,12 @@ read PKG_DEPENDENCIES
 #	esac
 #done
 
-if [ -e CMakeLists.txt ]; then
+if test -e CMakeLists.txt; then
     sed -i "s#\(PROJECT_DESCRIPTION\ \).*#\1\"$PKG_DESC\")#" CMakeLists.txt
+fi
+if test -e README.md; then
+    sed -i "s#dummy-brief-desc#$PKG_DESC#" README.md
+    sed -i "s#dummy-long-desc#$PKG_LONG_DESC#" README.md
 fi
 sed -i "s#dummy-brief-desc#$PKG_DESC#" $MANIFEST
 sed -i "s#dummy-long-desc#$PKG_LONG_DESC#" $MANIFEST
