@@ -5,15 +5,15 @@
 
 namespace dummy_project
 {
-	class DummyClass
-	{
-		public: 
-			/**
-			* Print a welcome to stdout
-			* \return nothing
-			*/
-			void welcome();
-	};
+    class DummyClass
+    {
+        public: 
+            /**
+             * Print a welcome to stdout
+             * \return nothing
+             */
+            void welcome();
+    };
 
 } // end namespace dummy_project
 

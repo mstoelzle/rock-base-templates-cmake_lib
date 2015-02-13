@@ -1,11 +1,8 @@
 #include "Dummy.hpp"
 
-namespace dummy_project
+using namespace dummy_project;
+
+void DummyClass::welcome()
 {
-
-	void DummyClass::welcome()
-	{
-		std::cout << "You successfully compiled and executed DummyProject. Welcome!" << std::endl;
-	}
-
+    std::cout << "You successfully compiled and executed DummyProject. Welcome!" << std::endl;
 }
