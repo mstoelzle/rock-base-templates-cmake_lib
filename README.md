@@ -33,23 +33,16 @@ processes and simplify reuse of this project. Following these rules ensures that
 the Rock CMake macros automatically handle the project's build process and
 install setup properly.
 
-STRUCTURE
--- src/ 
-	Contains all header (*.h/*.hpp) and source files
--- build/
-	The target directory for the build process, temporary content
--- bindings/
-	Language bindings for this package, e.g. put into subfolders such as
-   |-- ruby/ 
-        Ruby language bindings
--- viz/
-        Source files for a vizkit plugin / widget related to this library 
--- resources/
-	General resources such as images that are needed by the program
--- configuration/
-	Configuration files for running the program
--- external/
-	When including software that needs a non standard installation process, or one that can be
-	easily embedded include the external software directly here
--- doc/
-	should contain the existing doxygen file: doxygen.conf
+### Folder Structure
+
+| directory         |       purpose                                                        |
+| ----------------- | ------------------------------------------------------               |
+| src/              | Contains all header (*.h/*.hpp) and source files                     |
+| build/ *          | The target directory for the build process, temporary content        |
+| bindings/         | Language bindings for this package, e.g. put into subfolders such as |
+| ruby/             | Ruby language bindings                                               |
+| viz/              | Source files for a vizkit plugin / widget related to this library    |
+| resources/        | General resources such as images that are needed by the program      |
+| configuration/    | Configuration files for running the program                          |
+| external/         | When including software that needs a non standard installation process, or one that can be easily embedded include the external software directly here |
+| doc/              | should contain the existing doxygen file: doxygen.conf               |
