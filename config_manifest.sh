@@ -77,6 +77,7 @@ if test -e README.md; then
     sed -i "s#dummy-long-desc#$PKG_LONG_DESC#" README.md
 fi
 sed -i "s#dummy-brief-desc#$PKG_DESC#" $MANIFEST
+sed -i "s#dummy-brief-desc#$PKG_DESC#" "CMakeLists.txt"
 sed -i "s#dummy-long-desc#$PKG_LONG_DESC#" $MANIFEST
 sed -i "s#dummy-author#$PKG_AUTHOR#" $MANIFEST
 sed -i "s#dummy-email#$PKG_EMAIL#" $MANIFEST
